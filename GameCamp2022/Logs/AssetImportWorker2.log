@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2021.3.3f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker2
 -projectPath
 C:/Users/Kaarlo/Documents/TAMK2021/Kesä2022/GameCamp/GameCamp2022/GameCamp2022
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker2.log
 -srvPort
 64555
 Successfully changed project path to: C:/Users/Kaarlo/Documents/TAMK2021/Kesä2022/GameCamp/GameCamp2022/GameCamp2022
@@ -47,7 +47,7 @@ C:/Users/Kaarlo/Documents/TAMK2021/Kesä2022/GameCamp/GameCamp2022/GameCamp2022
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 100.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 100.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.3f1 (af2e63e8f9bd)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -63,37 +63,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006829 seconds.
+Registered in 0.006914 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 100.24 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 97.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.661 seconds
+- Completed reload, in  0.659 seconds
 Domain Reload Profiling:
-	ReloadAssembly (662ms)
-		BeginReloadAssembly (84ms)
+	ReloadAssembly (660ms)
+		BeginReloadAssembly (82ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (466ms)
-			LoadAssemblies (82ms)
+		EndReloadAssembly (463ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (100ms)
+			SetupTypeCache (97ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (288ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (283ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (100ms)
+				RefreshPlugins (98ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadAttributes (133ms)
 				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -101,7 +101,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008106 seconds.
+Registered in 0.007600 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Kaarlo\Documents\TAMK2021\Kesä2022\GameCamp\GameCamp2022\GameCamp2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Kaarlo\Documents\TAMK2021\Kesä2022\GameCamp\GameCamp2022\GameCamp2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -109,29 +109,29 @@ Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.021 seconds
+- Completed reload, in  1.042 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1021ms)
-		BeginReloadAssembly (115ms)
+	ReloadAssembly (1043ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (792ms)
-			LoadAssemblies (85ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (797ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (250ms)
+			SetupTypeCache (260ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (378ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (375ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (228ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -140,12 +140,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3429 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 30 unused Assets / (112.5 KB). Loaded Objects now: 3890.
 Memory consumption went from 119.1 MB to 119.0 MB.
-Total: 3.259900 ms (FindLiveObjects: 0.309400 ms CreateObjectMapping: 0.107300 ms MarkObjects: 2.732500 ms  DeleteObjects: 0.109500 ms)
+Total: 3.383900 ms (FindLiveObjects: 0.295400 ms CreateObjectMapping: 0.106200 ms MarkObjects: 2.892600 ms  DeleteObjects: 0.088700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,22 +159,22 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 737.799480 seconds.
-  path: Assets/TestAssets/grey.asset
-  artifactKey: Guid(8378c2cfd7d991e469e2aa54b1557d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TestAssets/grey.asset using Guid(8378c2cfd7d991e469e2aa54b1557d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09829c5eabf73a5c023dd9dc8376d1c6') in 0.081416 seconds 
+  Time since last request: 737.799013 seconds.
+  path: Assets/TestAssets/black.asset
+  artifactKey: Guid(500e8b5ce09031c4c9cf7fa85f6add54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestAssets/black.asset using Guid(500e8b5ce09031c4c9cf7fa85f6add54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f688828c5beff1575460de1c2b734712') in 0.081799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TestAssets/red.png
+  artifactKey: Guid(457665403678b4a47924a3a90c562951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestAssets/red.png using Guid(457665403678b4a47924a3a90c562951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73ce93e1539a44ee8b076435ecede60') in 0.096507 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000032 seconds.
-  path: Assets/TestAssets/red.asset
-  artifactKey: Guid(c5f47b237741005469b6a205a1602487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TestAssets/red.asset using Guid(c5f47b237741005469b6a205a1602487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0896cbd82c7ce83b49de4663ffffe81c') in 0.010197 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/TestAssets/hex_rock.fbx
-  artifactKey: Guid(d5b16fb25a14f1c44882bc654e64ec99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TestAssets/hex_rock.fbx using Guid(d5b16fb25a14f1c44882bc654e64ec99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff6f7bb52fd53c3da22fa4e9793d181') in 0.152151 seconds 
+  path: Assets/TestAssets/New Palette.prefab
+  artifactKey: Guid(b5373211e2a1a5f47a8417bb08af2a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestAssets/New Palette.prefab using Guid(b5373211e2a1a5f47a8417bb08af2a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce08836bbd604cde7a8a5d60bbf584ee') in 0.040459 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
