@@ -149,6 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerNormal: {fileID: 5930591294550354462, guid: 9d6e23aad3c6778428ffc990292649a6, type: 3}
+  towerFast: {fileID: 7154577067749072163, guid: 783fe1807c34ed34281539322ee41a7f, type: 3}
+  towerBrute: {fileID: 8364213300115160829, guid: c6e10a05920062641a2312997f880d88, type: 3}
+  normalTowerButton: {fileID: 0}
+  fastTowerButton: {fileID: 0}
+  bruteTowerButton: {fileID: 0}
 --- !u!4 &6510175695681449692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f6d88c65db220414c9ef8770720ce715, type: 3}
