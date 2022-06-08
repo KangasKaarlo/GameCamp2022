@@ -8,6 +8,7 @@ public class LevelCreator : MonoBehaviour
     public GameObject ground;
     public GameObject hill;
     public GameObject rough;
+    public GameObject spawner;
     public Tilemap tilemap;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class LevelCreator : MonoBehaviour
                 Vector3 place = tilemap.CellToWorld(localPlace);
                 if (tile != null)
                 {
+                    
                     Instantiate(ground, place, Quaternion.identity);
                     if (tile.name == "black")
                     {
@@ -32,6 +34,10 @@ public class LevelCreator : MonoBehaviour
                     else if (tile.name == "red")
                     {
                         Instantiate(rough, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                    }
+                    else if (tile.name == "pink")
+                    {
+                        Instantiate(spawner, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
                     }
 
                 }
