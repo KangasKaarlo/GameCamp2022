@@ -99,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f6d88c65db220414c9ef8770720ce715, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d03ea10e841f3743ab315c9f7a1cfe3, type: 2}
     - target: {fileID: 919132149155446097, guid: f6d88c65db220414c9ef8770720ce715, type: 3}
       propertyPath: m_Name
       value: hex_forest
