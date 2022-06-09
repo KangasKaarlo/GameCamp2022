@@ -12,6 +12,7 @@ public class TowerPlacement : MonoBehaviour
     public Button normalTowerButton;
     public Button fastTowerButton;
     public Button bruteTowerButton;
+    bool towerIsPlaced = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,19 +36,23 @@ public class TowerPlacement : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(activeButton == "NormalTowerButton")
+        if(!towerIsPlaced)
         {
-            Instantiate(towerNormal, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
-        } else if (activeButton == "FastTowerButton")
-        {
-            Instantiate(towerFast, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+            if(activeButton == "NormalTowerButton")
+            {
+                Instantiate(towerNormal, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                towerIsPlaced = true;
+            } else if (activeButton == "FastTowerButton")
+            {
+                Instantiate(towerFast, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                towerIsPlaced = true;
+            }
+            else if (activeButton == "BruteTowerButton")
+            {
+                Instantiate(towerBrute, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                towerIsPlaced = true;
+            }
         }
-        else if (activeButton == "BruteTowerButton")
-        {
-            Instantiate(towerBrute, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
-        }
-
-
     }
     public void selectNormalTower()
     {
