@@ -4022,7 +4022,7 @@ MonoBehaviour:
   targetScreenSize:
     width: 256
     height: 144
-  screenScaleFactor: 4
+  screenScaleFactor: 1
   display: {fileID: 883129297}
 --- !u!114 &1348669108
 MonoBehaviour:
@@ -4100,7 +4100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348669105}
   m_LocalRotation: {x: 0.5735764, y: 0, z: 0, w: 0.8191521}
-  m_LocalPosition: {x: 1, y: 8, z: -2.24}
+  m_LocalPosition: {x: 1, y: 8, z: -1.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
