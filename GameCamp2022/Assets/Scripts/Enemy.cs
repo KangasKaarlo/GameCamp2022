@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestEnemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float speed;
+    public int health;
+
     private WayPoints Wpoints;
     private int waypointIndex;
     // Start is called before the first frame update
@@ -30,6 +32,11 @@ public class TestEnemy : MonoBehaviour
             }
         }
 
+        //TEMP to test Dying
+        if(health == 0)
+        {
+            speed = 0;
+        }
 
     }
 }
