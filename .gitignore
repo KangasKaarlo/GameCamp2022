@@ -36,6 +36,8 @@ sysinfo.txt
 # Visual Studio 2015 cache/options directory
 .vs/
 
+#If someone for some reason opens a file in vscode
+.vscode/
 
 ###
 # OS generated
