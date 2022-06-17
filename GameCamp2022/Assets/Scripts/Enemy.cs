@@ -9,10 +9,17 @@ public class Enemy : MonoBehaviour
 
     private WayPoints Wpoints;
     private int waypointIndex;
+    private int wayPointDecider;
     // Start is called before the first frame update
     void Start()
     {
-        Wpoints = GameObject.FindGameObjectWithTag("Waypoints").GetComponent<WayPoints>();
+        wayPointDecider = Random.Range (1,10);
+        if (wayPointDecider <= 5){
+            Wpoints = GameObject.FindGameObjectWithTag("Waypoints").GetComponent<WayPoints>();
+        } else {
+            Wpoints = GameObject.FindGameObjectWithTag("Waypoints2nd").GetComponent<WayPoints>();
+        }
+        
     }
 
     // Update is called once per frame
