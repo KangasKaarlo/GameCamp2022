@@ -20,17 +20,25 @@ public class HitReqTower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        
         if (targets.Length > 0)
         {
-            if(fireCountdown <= 0)
-            {
-                targets[0].GetComponent<Enemy>().health -= 1;
-                if (targets[0].GetComponent<Enemy>().health <= 0)
+           if (targets[0] != null) {
+                if (fireCountdown <= 0)
                 {
-                    targets = targets.Except(new GameObject[] { targets[0] }).ToArray();
+                    targets[0].GetComponent<Enemy>().health -= 1;
+                    if (targets[0].GetComponent<Enemy>().health <= 0)
+                    {
+                        targets = targets.Except(new GameObject[] { targets[0] }).ToArray();
+                    }
+                    fireCountdown = fireRate;
                 }
-                fireCountdown = fireRate;
+            }
+           else
+            {
+                for (int i = 0; i < targets.Length - 1; i++)
+                {
+                    targets[i] = targets[i + 1];
+                }
             }
         }
         fireCountdown -= Time.deltaTime;

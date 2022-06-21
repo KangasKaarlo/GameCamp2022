@@ -10,9 +10,14 @@ public class Enemy : MonoBehaviour
     private WayPoints Wpoints;
     private int waypointIndex;
     private int wayPointDecider;
+
+    public GameObject mainCamera;
     // Start is called before the first frame update
     void Start()
     {
+
+        mainCamera = GameObject.Find("PixelCamera");
+
         wayPointDecider = Random.Range (1,10);
         if (wayPointDecider <= 5){
             Wpoints = GameObject.FindGameObjectWithTag("Waypoints").GetComponent<WayPoints>();
@@ -42,8 +47,16 @@ public class Enemy : MonoBehaviour
         //TEMP to test Dying
         if(health == 0)
         {
-            speed = 0;
+            Destroy(transform.parent.gameObject);
+            Destroy(this);
         }
 
+        //Damaging the player
+        if(this.transform.position.x > 11)
+        {
+            mainCamera.GetComponent<PlayerStatus>().health -= 1;
+            Destroy(transform.parent.gameObject);
+            Destroy(this);
+        }
     }
 }
