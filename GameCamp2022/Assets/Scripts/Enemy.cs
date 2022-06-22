@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
     public int health;
+    public int moneyGainedOnDeath;
 
     private WayPoints Wpoints;
     private int waypointIndex;
@@ -47,6 +48,7 @@ public class Enemy : MonoBehaviour
         //Dying
         if(health == 0)
         {
+            mainCamera.GetComponent<PlayerStatus>().money += moneyGainedOnDeath;
             Destroy(transform.parent.gameObject);
             Destroy(this);
         }

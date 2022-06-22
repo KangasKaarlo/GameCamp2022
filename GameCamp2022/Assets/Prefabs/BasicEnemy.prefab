@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   health: 5
+  moneyGainedOnDeath: 50
   mainCamera: {fileID: 0}
 --- !u!54 &8779895331830051617
 Rigidbody:
