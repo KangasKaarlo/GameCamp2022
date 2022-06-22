@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 865285477887958438}
   - component: {fileID: 5391025292609853478}
   - component: {fileID: 5319464062447993104}
+  - component: {fileID: 5106558334917165685}
+  - component: {fileID: 7475976995767382958}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -97,6 +99,34 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5106558334917165685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947319496907914356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42fbcc1448af594e9c530c79061c223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0.5
+  fireCountdown: 0
+  targets: []
+--- !u!135 &7475976995767382958
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947319496907914356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &7154577067749072163
 GameObject:
   m_ObjectHideFlags: 0

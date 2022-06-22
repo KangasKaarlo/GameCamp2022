@@ -14,7 +14,14 @@ public class HitReqTower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+           if (Vector3.Distance(enemy.transform.position, this.transform.position) < 2.5)
+            {
+                targets = targets.Concat(new GameObject[] { enemy }).ToArray();
+            }
+        }
     }
 
     // Update is called once per frame

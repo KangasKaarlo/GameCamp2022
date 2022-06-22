@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //this.transform.position += new Vector3(5 * Time.deltaTime,0,0); 
+        //Movement
         transform.position = Vector3.MoveTowards(transform.position, Wpoints.waypoints[waypointIndex].position, speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, Wpoints.waypoints[waypointIndex].position)< 0.1f)
@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        //TEMP to test Dying
+        //Dying
         if(health == 0)
         {
             Destroy(transform.parent.gameObject);

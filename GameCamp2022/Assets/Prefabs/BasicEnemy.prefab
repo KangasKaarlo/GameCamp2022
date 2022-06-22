@@ -145,7 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  health: 3
+  health: 5
+  mainCamera: {fileID: 0}
 --- !u!54 &8779895331830051617
 Rigidbody:
   m_ObjectHideFlags: 0
