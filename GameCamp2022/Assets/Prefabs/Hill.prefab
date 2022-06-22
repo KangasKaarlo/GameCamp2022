@@ -158,6 +158,10 @@ MonoBehaviour:
   normalTowerButton: {fileID: 0}
   fastTowerButton: {fileID: 0}
   bruteTowerButton: {fileID: 0}
+  normalTowerPrice: 100
+  fastTowerPrice: 200
+  bruteTowerPrice: 0
+  mainCamera: {fileID: 0}
 --- !u!4 &6510175695681449692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f6d88c65db220414c9ef8770720ce715, type: 3}
