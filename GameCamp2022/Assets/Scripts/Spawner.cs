@@ -25,7 +25,10 @@ public class Spawner : MonoBehaviour
         {
             for (int y = 0; y < levelOne[i].amount; y++)
             {
-                Instantiate(levelOne[i].Enemy, this.transform.position, Quaternion.identity);
+                if (levelOne[i].Enemy != null)
+                {
+                    Instantiate(levelOne[i].Enemy, this.transform.position, Quaternion.identity);
+                }
                 yield return new WaitForSeconds(levelOne[i].delay);
             }
         }

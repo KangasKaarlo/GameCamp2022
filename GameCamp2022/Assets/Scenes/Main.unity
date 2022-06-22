@@ -4089,7 +4089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  money: 0
+  money: 200
 --- !u!1 &1010629581
 GameObject:
   m_ObjectHideFlags: 0
