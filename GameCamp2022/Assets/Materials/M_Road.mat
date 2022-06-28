@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Road
+  m_Name: M_Road
   m_Shader: {fileID: 4800000, guid: 849dc4ff793a3f943ad21a3b6ee26456, type: 3}
   m_ValidKeywords:
   - _ADDITIONAL_LIGHTS_ENABLED
@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 37b91827ddbfd4e5ebdfbf422397f43a, type: 3}
+        m_Texture: {fileID: 2800000, guid: eebcc14c08e6b4881bd471ec0bed76d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
