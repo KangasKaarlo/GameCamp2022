@@ -105,8 +105,8 @@ Material:
     - _EnvironmentReflections: 1
     - _Fog: 1
     - _Fresnel: 1
-    - _FresnelSmoothness: 0.1
-    - _FresnelThickness: 0.45
+    - _FresnelSmoothness: 0
+    - _FresnelThickness: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0

@@ -27,6 +27,7 @@ Material:
   - _ENVIRONMENT_LIGHTING_ENABLED
   - _FOG
   - _FRESNEL
+  - _PURE_SHADOW_COLOR
   m_InvalidKeywords:
   - _ZWRITE_ON
   m_LightmapFlags: 4
@@ -118,17 +119,17 @@ Material:
     - _EnvironmentReflections: 1
     - _Fog: 1
     - _Fresnel: 1
-    - _FresnelSmoothness: 0.1
-    - _FresnelThickness: 0.45
+    - _FresnelSmoothness: 0
+    - _FresnelThickness: 0.41
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
-    - _PureShadowColor: 0
+    - _PureShadowColor: 1
     - _QueueOffset: 0
-    - _Ramp0: -1
+    - _Ramp0: 0.08
     - _Ramp1: 0.5
     - _RampSmoothness: 0
     - _RampTriple: 0
@@ -155,8 +156,8 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 0.57434916, g: 0.2898838, b: 0.37476456, a: 1}
-    - _ShadowTint: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 1, g: 0.3254717, b: 0.5315774, a: 0.5254902}
+    - _ShadowTint: {r: 0.15748242, g: 0.07155571, b: 0.2264151, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
