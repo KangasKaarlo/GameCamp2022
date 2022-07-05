@@ -32,6 +32,15 @@ public class HitReqTower : MonoBehaviour
         if (targets.Length > 0)
         {
            if (targets[0] != null) {
+
+                //Looking at the target
+                var lookPos = targets[0].transform.position - transform.position;
+                lookPos.y = 0;
+                var rotation = Quaternion.LookRotation(lookPos);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 2);
+
+
+                //Shooting
                 if (fireCountdown <= 0)
                 {
                     targets[0].GetComponent<Enemy>().health -= 1;

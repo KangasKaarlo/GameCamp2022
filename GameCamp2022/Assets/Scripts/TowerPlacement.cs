@@ -49,18 +49,18 @@ public class TowerPlacement : MonoBehaviour
         {
             if (activeButton == "NormalTowerButton" && mainCamera.GetComponent<PlayerStatus>().money >= normalTowerPrice)
             {
-                Instantiate(towerNormal, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                Instantiate(towerNormal, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.LookRotation(Vector3.left));
                 towerIsPlaced = true;
                 mainCamera.GetComponent<PlayerStatus>().money -= normalTowerPrice;
             } else if (activeButton == "FastTowerButton" && mainCamera.GetComponent<PlayerStatus>().money >= fastTowerPrice)
             {
-                Instantiate(towerFast, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                Instantiate(towerFast, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.LookRotation(Vector3.left));
                 towerIsPlaced = true;
                 mainCamera.GetComponent<PlayerStatus>().money -= fastTowerPrice;
             }
             else if (activeButton == "BruteTowerButton")
             {
-                Instantiate(towerBrute, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                Instantiate(towerBrute, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.LookRotation(Vector3.left));
                 towerIsPlaced = true;
             }
         }
