@@ -18,6 +18,7 @@ public class TowerPlacement : MonoBehaviour
     public int bruteTowerPrice;
     bool towerIsPlaced = false;
     public GameObject mainCamera;
+    Transform closest;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class TowerPlacement : MonoBehaviour
 
         bruteTowerButton = GameObject.Find("BruteTowerButton").GetComponent<Button>();
         bruteTowerButton.onClick.AddListener(selectBruteTower);
+
     }
 
     // Update is called once per frame
@@ -45,7 +47,7 @@ public class TowerPlacement : MonoBehaviour
     {
         if(!towerIsPlaced)
         {
-            if(activeButton == "NormalTowerButton" && mainCamera.GetComponent<PlayerStatus>().money >= normalTowerPrice)
+            if (activeButton == "NormalTowerButton" && mainCamera.GetComponent<PlayerStatus>().money >= normalTowerPrice)
             {
                 Instantiate(towerNormal, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
                 towerIsPlaced = true;

@@ -335,6 +335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  health: 5
-  moneyGainedOnDeath: 50
+  health: 1
+  moneyGainedOnDeath: 10
   mainCamera: {fileID: 0}

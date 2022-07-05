@@ -10,7 +10,6 @@ public class HitReqTower : MonoBehaviour
     public float fireCountdown;
     public GameObject[] targets;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +21,14 @@ public class HitReqTower : MonoBehaviour
                 targets = targets.Concat(new GameObject[] { enemy }).ToArray();
             }
         }
+
+      
     }
 
     // Update is called once per frame
     void Update()
-    {   
+    {
+        
         if (targets.Length > 0)
         {
            if (targets[0] != null) {
