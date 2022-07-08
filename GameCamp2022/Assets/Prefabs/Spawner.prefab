@@ -110,6 +110,33 @@ MonoBehaviour:
   - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
     amount: 10
     delay: 0.3
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 1
+    delay: 3
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 15
+    delay: 0.3
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 1
+    delay: 3
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 25
+    delay: 0.3
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 1
+    delay: 7
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 40
+    delay: 0.3
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 5
+    delay: 0.95
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 10
+    delay: 0.15
+  - Enemy: {fileID: 2124097653217962037, guid: 093fdd6f24fc7b14b95b761dc9cb69f8, type: 3}
+    amount: 70
+    delay: 0.3
 --- !u!4 &6682249399022695472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14d413c6809f69b44b8799adaec43f20, type: 3}
