@@ -25,19 +25,23 @@ public class LevelCreator : MonoBehaviour
                 Vector3 place = tilemap.CellToWorld(localPlace);
                 if (tile != null)
                 {
+
+                    GameObject groundTile = Instantiate(ground, place, Quaternion.identity);
                     
-                    Instantiate(ground, place, Quaternion.identity);
                     if (tile.name == "black")
                     {
-                        Instantiate(hill, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                        GameObject tmp = Instantiate(hill, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                        tmp.transform.Rotate(new Vector3(0, (int)Random.Range(0, 5) * 60 , 0));
                     }
                     else if (tile.name == "red")
                     {
-                        Instantiate(rough, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                        GameObject tmp = Instantiate(rough, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                        tmp.transform.Rotate(new Vector3(0, (int)Random.Range(0, 5) * 60, 0));
                     }
                     else if (tile.name == "pink")
                     {
-                        Instantiate(spawner, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                        GameObject tmp = Instantiate(spawner, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                        
                     }
 
                 }
