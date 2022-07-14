@@ -5912,7 +5912,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
+          time: 0.20110193
           value: 1
           inSlope: 0.02582159
           outSlope: 0.02582159

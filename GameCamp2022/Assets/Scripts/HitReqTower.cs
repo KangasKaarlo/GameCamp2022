@@ -9,6 +9,7 @@ public class HitReqTower : MonoBehaviour
     public float fireRate;
     public float fireCountdown;
     public GameObject[] targets;
+    public ParticleSystem Shoot;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class HitReqTower : MonoBehaviour
                 //Shooting
                 if (fireCountdown <= 0)
                 {
+                    Shoot.Play();
                     targets[0].GetComponent<Enemy>().health -= 1;
                     if (targets[0].GetComponent<Enemy>().health <= 0)
                     {

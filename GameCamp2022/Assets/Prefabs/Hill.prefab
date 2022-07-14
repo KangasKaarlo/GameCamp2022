@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: d4314c6b4c6a041c389b549f8199d1a7, type: 2}
+    - target: {fileID: -5754084199372789682, guid: e1384ad546a8a42088622ac79ebf8e2e, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1023827128373796230, guid: 19e03be3707d1452399a546924c8f182, type: 3}
     - target: {fileID: 919132149155446097, guid: e1384ad546a8a42088622ac79ebf8e2e, type: 3}
       propertyPath: m_Name
       value: HexagonOutline
