@@ -220,6 +220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider
       objectReference: {fileID: 0}
+    - target: {fileID: 5463051717979939447, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
 --- !u!1 &6043065024129550861 stripped
