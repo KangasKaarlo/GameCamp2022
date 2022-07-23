@@ -34,6 +34,16 @@ public class Enemy : MonoBehaviour
         //Movement
         transform.position = Vector3.MoveTowards(transform.position, Wpoints.waypoints[waypointIndex].position, speed * Time.deltaTime);
 
+
+        //turning towards waypoint
+        var direction = Wpoints.waypoints[waypointIndex].position - transform.position;
+        direction.y = 0;
+        var rotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 3);
+        
+    
+        
+
         if (Vector3.Distance(transform.position, Wpoints.waypoints[waypointIndex].position)< 0.1f)
         {
             
