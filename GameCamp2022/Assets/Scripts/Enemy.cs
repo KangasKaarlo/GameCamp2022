@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour
     private int wayPointDecider;
 
     public GameObject mainCamera;
+
+    public ParticleSystem Blood;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +61,7 @@ public class Enemy : MonoBehaviour
         //Dying
         if(health == 0)
         {
+            Blood.Play();
             mainCamera.GetComponent<PlayerStatus>().money += moneyGainedOnDeath;
             Destroy(transform.parent.gameObject);
             Destroy(this);
