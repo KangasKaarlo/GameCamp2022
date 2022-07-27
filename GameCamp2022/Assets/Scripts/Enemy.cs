@@ -15,12 +15,15 @@ public class Enemy : MonoBehaviour
     public GameObject mainCamera;
 
     public ParticleSystem Blood;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
 
         mainCamera = GameObject.Find("PixelCamera");
+
+        anim = GetComponentInChildren<Animator>();
 
         wayPointDecider = Random.Range (1,10);
         if (wayPointDecider <= 5){
@@ -59,12 +62,9 @@ public class Enemy : MonoBehaviour
         }
 
         //Dying
-        if(health == 0)
+        if (health == 0)
         {
-            Blood.Play();
-            mainCamera.GetComponent<PlayerStatus>().money += moneyGainedOnDeath;
-            Destroy(transform.parent.gameObject);
-            Destroy(this);
+            StartCoroutine(Death());
         }
 
         //Damaging the player
@@ -74,5 +74,16 @@ public class Enemy : MonoBehaviour
             Destroy(transform.parent.gameObject);
             Destroy(this);
         }
+        IEnumerator Death()
+        {
+           speed = 0.1f;
+           Blood.Play();
+           anim.SetTrigger("Death");
+           yield return new WaitForSeconds(1.5f);
+           mainCamera.GetComponent<PlayerStatus>().money += moneyGainedOnDeath;
+           Destroy(transform.parent.gameObject);
+           Destroy(this);
+        }
+
     }
 }

@@ -151,6 +151,7 @@ MonoBehaviour:
   moneyGainedOnDeath: 50
   mainCamera: {fileID: 0}
   Blood: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!54 &8779895331830051617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -179,6 +180,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -192,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -200,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
       propertyPath: m_LocalRotation.z
@@ -212,7 +225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -226,7 +239,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6793530446806342086, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
 --- !u!1 &6043065024129550861 stripped
 GameObject:
@@ -280,6 +294,7 @@ MonoBehaviour:
   moneyGainedOnDeath: 0
   mainCamera: {fileID: 0}
   Blood: {fileID: 6514480084664099151}
+  anim: {fileID: 0}
 --- !u!4 &6383455770085953719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4655446836049901773, guid: c7308db31e8509f4cb80d6fdf45422a5, type: 3}
