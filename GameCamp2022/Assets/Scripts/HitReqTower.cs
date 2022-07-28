@@ -10,10 +10,12 @@ public class HitReqTower : MonoBehaviour
     public float fireCountdown;
     public GameObject[] targets;
     public ParticleSystem Shoot;
+     public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
@@ -44,6 +46,7 @@ public class HitReqTower : MonoBehaviour
                 //Shooting
                 if (fireCountdown <= 0)
                 {
+                    anim.SetTrigger("Fire");
                     Shoot.Play();
                     targets[0].GetComponent<Enemy>().health -= 1;
                     if (targets[0].GetComponent<Enemy>().health <= 0)

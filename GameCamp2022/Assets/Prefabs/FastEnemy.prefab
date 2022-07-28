@@ -290,7 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   health: 1
-  moneyGainedOnDeath: 0
+  moneyGainedOnDeath: 5
   mainCamera: {fileID: 0}
   Blood: {fileID: 6514480084664099151}
   anim: {fileID: 0}
