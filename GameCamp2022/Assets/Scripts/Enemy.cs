@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
     public ParticleSystem Blood;
     public Animator anim;
     private bool DeathAnimationPlaying = false;
+    public AudioClip squish;
+    AudioSource audiosource;
 
     // Start is called before the first frame update
     void Start()
