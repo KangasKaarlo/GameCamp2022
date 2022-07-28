@@ -57,11 +57,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Olive Days SDF
+  m_Name: Olive Days SDF 1
   m_EditorClassIdentifier: 
-  hashCode: 1967146983
+  hashCode: -965615114
   material: {fileID: 3316825799398967820}
-  materialHashCode: -1421284889
+  materialHashCode: 1131268502
   m_Version: 1.1.0
   m_SourceFontFileGUID: 1f5bc462daa0d0c4ea624659ba6564a0
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 1f5bc462daa0d0c4ea624659ba6564a0, type: 3}
@@ -2249,7 +2249,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.563
+    - _OutlineWidth: 0.335
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.8333333
@@ -2278,10 +2278,10 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 0.9690027, b: 0.8915094, a: 1}
+    - _FaceColor: {r: 0.07742971, g: 0.24862096, b: 0.5660378, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0.23344605, g: 0.31443882, b: 0.8113208, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
