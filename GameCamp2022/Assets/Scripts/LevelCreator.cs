@@ -7,7 +7,10 @@ public class LevelCreator : MonoBehaviour
 {
     public GameObject ground;
     public GameObject hill;
-    public GameObject rough;
+    public GameObject rough1;
+    public GameObject rough2;
+    public GameObject rough3;
+
     public GameObject spawner;
     public Tilemap tilemap;
     // Start is called before the first frame update
@@ -25,9 +28,8 @@ public class LevelCreator : MonoBehaviour
                 Vector3 place = tilemap.CellToWorld(localPlace);
                 if (tile != null)
                 {
-
-                    GameObject groundTile = Instantiate(ground, place, Quaternion.identity);
                     
+                    GameObject groundTile = Instantiate(ground, place, Quaternion.identity);
                     if (tile.name == "black")
                     {
                         GameObject tmp = Instantiate(hill, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
@@ -35,7 +37,22 @@ public class LevelCreator : MonoBehaviour
                     }
                     else if (tile.name == "red")
                     {
-                        GameObject tmp = Instantiate(rough, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
+                        GameObject placeable = rough1;
+                        switch(Random.Range(0, 2))
+                    
+                        {
+                            case 0:
+                                placeable = rough1;
+                                break;
+                            case 1:
+                                placeable = rough2;
+                                break;
+                            case 2:
+                                placeable = rough3;
+                                break;
+                        }
+
+                        GameObject tmp = Instantiate(placeable, place + new Vector3(0, 0.5f, 0), Quaternion.identity);
                         tmp.transform.Rotate(new Vector3(0, (int)Random.Range(0, 5) * 60, 0));
                     }
                     else if (tile.name == "pink")

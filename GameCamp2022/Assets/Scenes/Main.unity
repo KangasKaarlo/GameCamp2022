@@ -4864,7 +4864,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ground: {fileID: 6091493299920027997, guid: a6b82a6c55e59b344a9b571c046752f1, type: 3}
   hill: {fileID: 227385710401109822, guid: ba3121b25e5b4d543a8a7692885900d8, type: 3}
-  rough: {fileID: 4768758579957475362, guid: 416018c1e13dbe845a9bcf98bfbf9c76, type: 3}
+  rough1: {fileID: 4768758579957475362, guid: 416018c1e13dbe845a9bcf98bfbf9c76, type: 3}
+  rough2: {fileID: 4768758579957475362, guid: c6bff59b9d68e49f486c24ba77407dc6, type: 3}
+  rough3: {fileID: 4768758579957475362, guid: 0c07c37d902b142e29590f3ae4614367, type: 3}
   spawner: {fileID: 280714997817413490, guid: 9022cee2fd7e04d40a2595ff57e2699e, type: 3}
   tilemap: {fileID: 425988658}
 --- !u!114 &963194230
@@ -4970,7 +4972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -4.999939}
+  m_AnchoredPosition: {x: 0, y: -5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &984477599
