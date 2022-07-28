@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
 
     public ParticleSystem Blood;
     public Animator anim;
+    private bool DeathAnimationPlaying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -77,8 +78,12 @@ public class Enemy : MonoBehaviour
         IEnumerator Death()
         {
            speed = 0.1f;
-           Blood.Play();
-           anim.SetTrigger("Death");
+        if (DeathAnimationPlaying == false)
+            {
+                Blood.Play();
+                DeathAnimationPlaying = true;
+                anim.SetTrigger("Death");
+            }
            yield return new WaitForSeconds(1.5f);
            mainCamera.GetComponent<PlayerStatus>().money += moneyGainedOnDeath;
            Destroy(transform.parent.gameObject);
