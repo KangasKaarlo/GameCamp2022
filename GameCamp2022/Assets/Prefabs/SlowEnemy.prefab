@@ -151,6 +151,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   Blood: {fileID: 0}
   anim: {fileID: 0}
+  squish: {fileID: 0}
 --- !u!54 &8779895331830051617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -296,10 +297,16 @@ MonoBehaviour:
   moneyGainedOnDeath: 20
   mainCamera: {fileID: 0}
   Blood: {fileID: 1860520595825379493}
-  anim: {fileID: 0}
+  anim: {fileID: 3568407968892037829}
+  squish: {fileID: 0}
 --- !u!4 &2211064406395138100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5138661448468158219, guid: 88762b4b2041d2644baa62be60427a4f, type: 3}
+  m_PrefabInstance: {fileID: 6485031732792878911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3568407968892037829 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7528609158769855994, guid: 88762b4b2041d2644baa62be60427a4f, type: 3}
   m_PrefabInstance: {fileID: 6485031732792878911}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7887617139510873403
