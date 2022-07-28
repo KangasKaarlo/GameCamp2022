@@ -174,6 +174,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3808897470232090996}
     m_Modifications:
+    - target: {fileID: 2479435550738073098, guid: b7250184a54c7104bb55eb2829b64be8, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3653090362064462699, guid: b7250184a54c7104bb55eb2829b64be8, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068

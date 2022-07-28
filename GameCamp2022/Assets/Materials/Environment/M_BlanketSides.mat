@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Road
+  m_Name: M_BlanketSides
   m_Shader: {fileID: 4800000, guid: 849dc4ff793a3f943ad21a3b6ee26456, type: 3}
   m_ValidKeywords:
   - _ADDITIONAL_LIGHTS_ENABLED
@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: eebcc14c08e6b4881bd471ec0bed76d6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a96115ba3efe848cc8e36885a856a0b6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -106,7 +106,7 @@ Material:
     - _Fog: 1
     - _Fresnel: 1
     - _FresnelSmoothness: 0
-    - _FresnelThickness: 0
+    - _FresnelThickness: 0.424
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -115,7 +115,7 @@ Material:
     - _Parallax: 0.005
     - _PureShadowColor: 0
     - _QueueOffset: 0
-    - _Ramp0: 0.05
+    - _Ramp0: 0
     - _Ramp1: 0.5
     - _RampSmoothness: 0
     - _RampTriple: 0
@@ -139,15 +139,15 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 0.4575472, b: 0.4968552, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShadowTint: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 0.23455065, g: 0.57758063, b: 0.47353154, a: 0.53333336}
+    - _ShadowTint: {r: 0.21827158, g: 0.42452827, b: 0.35717916, a: 0.7294118}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &343213542321889948
+--- !u!114 &5686894265217897673
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
