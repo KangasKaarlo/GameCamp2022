@@ -19,6 +19,7 @@ public class TowerPlacement : MonoBehaviour
     bool towerIsPlaced = false;
     public GameObject mainCamera;
     Transform closest;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +33,7 @@ public class TowerPlacement : MonoBehaviour
         fastTowerButton = GameObject.Find("FastTowerButton").GetComponent<Button>();
         fastTowerButton.onClick.AddListener(selectFastTower);
 
-        bruteTowerButton = GameObject.Find("BruteTowerButton").GetComponent<Button>();
-        bruteTowerButton.onClick.AddListener(selectBruteTower);
+        
 
     }
 

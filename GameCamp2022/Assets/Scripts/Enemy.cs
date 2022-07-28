@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     public Animator anim;
     private bool DeathAnimationPlaying = false;
     public AudioClip squish;
-    AudioSource audiosource;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
         mainCamera = GameObject.Find("PixelCamera");
 
         anim = GetComponentInChildren<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
 
         wayPointDecider = Random.Range (1,10);
         if (wayPointDecider <= 5){
@@ -84,6 +86,7 @@ public class Enemy : MonoBehaviour
             {
                 Blood.Play();
                 DeathAnimationPlaying = true;
+                audioSource.PlayOneShot(squish);
                 anim.SetTrigger("Death");
             }
            yield return new WaitForSeconds(1.5f);
