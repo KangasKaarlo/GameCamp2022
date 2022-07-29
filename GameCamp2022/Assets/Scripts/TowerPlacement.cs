@@ -20,10 +20,13 @@ public class TowerPlacement : MonoBehaviour
     public GameObject mainCamera;
     Transform closest;
     
+    public bool canPlaceTowers;
+    public PauseMenu pauseMenu;
 
     // Start is called before the first frame update
     void Start()
     {
+        canPlaceTowers = true;
         mainCamera = GameObject.Find("PixelCamera");
 
         //Finds UI buttons and adds onclick functions to them
@@ -33,6 +36,9 @@ public class TowerPlacement : MonoBehaviour
         fastTowerButton = GameObject.Find("FastTowerButton").GetComponent<Button>();
         fastTowerButton.onClick.AddListener(selectFastTower);
 
+        pauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
+        
+
         
 
     }
@@ -40,12 +46,21 @@ public class TowerPlacement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pauseMenu.isPaused)
+        {
+            canPlaceTowers = false;
+
+        }else {
+            canPlaceTowers = true;
+            }
 
     }
 
     private void OnMouseDown()
     {
-        if(!towerIsPlaced)
+        if (canPlaceTowers)
+        {
+           if(!towerIsPlaced)
         {
             if (activeButton == "NormalTowerButton" && mainCamera.GetComponent<PlayerStatus>().money >= normalTowerPrice)
             {
@@ -63,7 +78,9 @@ public class TowerPlacement : MonoBehaviour
                 Instantiate(towerBrute, this.transform.position + new Vector3(0, 0.5f, 0), Quaternion.LookRotation(Vector3.left));
                 towerIsPlaced = true;
             }
+        } 
         }
+        
     }
     public void selectNormalTower()
     {

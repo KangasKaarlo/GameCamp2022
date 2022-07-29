@@ -150,6 +150,7 @@ MonoBehaviour:
   fastTowerPrice: 350
   bruteTowerPrice: 0
   mainCamera: {fileID: 0}
+  canPlaceTowers: 0
 --- !u!4 &2006252562788167385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e1384ad546a8a42088622ac79ebf8e2e, type: 3}
