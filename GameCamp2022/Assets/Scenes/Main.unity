@@ -14,12 +14,12 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.654902, g: 0.3647059, b: 0.90588236, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.60784316, g: 0.9960785, b: 0.9803922, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
-  m_LinearFogStart: 6
-  m_LinearFogEnd: 13
+  m_LinearFogStart: 12
+  m_LinearFogEnd: 14
   m_AmbientSkyColor: {r: 0.514151, g: 0.8607907, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.40970984, g: 0.9339623, b: 0.9035052, a: 1}
   m_AmbientGroundColor: {r: 0.8962264, g: 0.32551616, b: 0.6756535, a: 1}
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f5bd3f75375a511418b2c4ae9b72001f, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -290,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80ad6e278b46974991c3801c3665746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
   pauseMenuUI: {fileID: 984477597}
 --- !u!1 &68296175
 GameObject:
